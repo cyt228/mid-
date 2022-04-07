@@ -1,0 +1,86 @@
+.word1
+{
+    border: 2px solid black;
+    position:absolute;
+    top:100px;
+    left:550px;
+    background-color: #ffffce;
+}
+.word2
+{
+    border: 1px solid black;
+    position:absolute;
+    top:200px;
+    left:550px;
+    background-color: #ffffce;
+}
+th, td 
+{
+    border: 1px solid black;
+}
+table
+{
+    position:relative;
+    left:475px;
+    bottom:15px;
+    align:center;
+    color:white;
+    background-color: #ffffce;
+}
+
+#button1,#button2,#button3
+{
+    background-color: #ffffce;
+}
+
+#button1:hover 
+{
+  background-color: lightskyblue;
+  color: white;
+}
+#button2:hover 
+{
+  background-color: lightgreen;
+  color
+  : white;
+}
+#button3:hover 
+{
+  background-color: orange;
+  color: white;
+}
+body{
+    background-color:#004d00;
+}
+#back{
+    position:relative;
+    font-size: 20px;
+    left:400px;
+    top:-100px;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:8px;
+    padding-bottom:8px;
+    border-radius: 50%;
+    background-color:rgb(249, 237, 205);
+	border-color:gray;
+	border-style:solid;
+    text-decoration:none;
+    color:black;
+}
+#restart{
+    position:relative;
+    font-size: 20px;
+    left:400px;
+    top:-100px;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:8px;
+    padding-bottom:8px;
+    border-radius: 50%;
+    background-color:rgb(249, 237, 205);
+	border-color:gray;
+	border-style:solid;
+    text-decoration:none;
+    color:black;
+}

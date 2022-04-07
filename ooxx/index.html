@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>井字遊戲</title>
+</head>
+
+<body >
+<h1>井字遊戲</h1>
+<h3>玩家1: O</h3>
+<h3>玩家2: X</h3><br>
+<h3 id="show"></h3>
+<table border=1 style="border-collapse:collapse;width:150px;height:150px" bordercolor="#000000">
+  <tr>
+    <td width=50 align="center" id="ttt00" onClick="playRound(this);">_</td>
+    <td width=50 align="center" id="ttt01" onClick="playRound(this);">_</td>
+    <td width=50 align="center" id="ttt02" onClick="playRound(this);">_</td>
+  </tr>
+
+  <tr>
+    <td width=50 align="center" id="ttt10" onClick="playRound(this);">_</td>
+    <td width=50 align="center" id="ttt11" onClick="playRound(this);">_</td>
+    <td width=50 align="center" id="ttt12" onClick="playRound(this);">_</td>
+  </tr>
+
+  <tr>
+    <td width=50 align="center" id="ttt20" onClick="playRound(this);">_</td>
+    <td width=50 align="center" id="ttt21" onClick="playRound(this);">_</td>
+    <td width=50 align="center" id="ttt22" onClick="playRound(this);">_</td>
+  </tr>
+
+</table>
+<br><br>
+	<button type="button" id="restart" onclick="clearTable()">Restart</button>
+    <a href="../index.html#work" id="back">Back</a>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</body>
+</html>

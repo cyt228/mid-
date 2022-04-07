@@ -1,0 +1,34 @@
+body{
+    text-align: center;
+    background-color:rgb(255, 204, 153);
+}
+h2{
+    /* 預留歌曲名稱顯示空間 */
+    height: 32px;
+    font-size: medium;
+}
+#back{
+    font-size: 15px;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:8px;
+    padding-bottom:8px;
+    border-radius: 50%;
+    background-color:rgb(249, 237, 205);
+	border-color:gray;
+	border-style:solid;
+    text-decoration:none;
+    color:black;
+}
+#playButton{
+    font-size: 15px;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:8px;
+    padding-bottom:8px;
+    border-radius: 50%;
+    background-color:rgb(249, 237, 205);
+	border-color:gray;
+	border-style:solid;
+    color:black;
+}

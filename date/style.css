@@ -1,0 +1,43 @@
+body{
+    background-color:antiquewhite;
+    text-align: center;
+}
+table{
+    border-style:dotted;
+    font-size:1.5em;
+    width:60%;
+    margin:auto;
+    position:absolute;
+    left:20%;
+}
+td,th{
+    border-style:dotted;
+}
+input{
+    font-size:15px;
+    width:100px
+}
+.click{
+    font-size:15px;
+    border-radius: 50%;
+    background-color:rgb(249, 237, 205);
+	border-color:gray;
+	border-style:solid;
+}
+a{
+    font-size:15px;
+}
+#back{
+    position:absolute;
+    font-size: 15px;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:3px;
+    padding-bottom:3px;
+    border-radius: 50%;
+    background-color:rgb(249, 237, 205);
+	border-color:gray;
+	border-style:solid;
+    text-decoration:none;
+    color:black;
+}

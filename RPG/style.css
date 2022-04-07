@@ -1,0 +1,40 @@
+body{
+    position:absolute;
+    left:35%;
+    text-align: center;
+    background-color:rgb(255, 204, 153);
+}
+canvas{
+    border: 2px solid black;
+    background-image: url(images/grasses68.gif);
+}
+#talkBox{
+    height: 20px;
+    color: brown;
+    font-size: 26px;
+    font-weight: bold;
+}
+#restart{
+    font-size: 26px;
+    position:relative;
+    position:center;
+    width:150px;
+    height:50px;
+    border-radius: 50%;
+    background-color:rgb(249, 237, 205);
+	border-color:gray;
+	border-style:solid;
+}
+#back{
+    font-size: 26px;
+    padding-left:45px;
+    padding-right:45px;
+    padding-top:8px;
+    padding-bottom:8px;
+    border-radius: 50%;
+    background-color:rgb(249, 237, 205);
+	border-color:gray;
+	border-style:solid;
+    text-decoration:none;
+    color:black;
+}
