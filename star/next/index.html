@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Galaxy Tour</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="../../assets/css/noscript.css" />
+    </noscript>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper-->
+    <div id="wrapper">
+
+        <!-- Nav -->
+        <nav id="nav">
+            <a href="../../index.html" class="icon solid fa-home"><span>Home</span></a>
+            <a href="../../#work" class="icon solid fa-folder"><span>Work</span></a>
+            <a href="../../#contact" class="icon solid fa-envelope"><span>Contact</span></a>
+            <a href="https://www.instagram.com/c.y.t_28/" class="icon brands fa-instagram"
+                target="_blank"><span>Instargram</span></a>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+
+            <article></article>
+
+            <!-- Work -->
+            <article id="work" class="panel">
+                <h1>Galaxy Tour</h1>
+                <div id="app">
+                    <h2 :class="h2ClassController">{{productName}}</h2>
+                    <p :style="pStyleController" style="text-align:center;">{{productDescription}}</p>
+                    
+                    <h4 style="text-align:center;">{{place[Math.floor(Math.random()*imageSrc.length)]}}
+                        <button onclick=javascript:window.location.reload()>Change</button>
+                        <button id='back'onclick=back()>Back</button>
+                    </h4>
+
+                    <br>
+                    <!--<img :src="imageSrc[1]">    指定一張-->
+                    <img :src="imageSrc[Math.floor(Math.random()*imageSrc.length)]" :style="imageStyleController"
+                        :alt="imageAlt" :title="imageAlt">
+
+                    <!--隨機一張-->
+                    <!--尺寸1284*856-->
+                    <br>
+                    <table v-for="(productClass, index) in productClasses" :key="index" width="100%">
+                        <tr style="position:relative; left:20%">
+                            <td width="20%">{{productClass.name}}</td>
+                            <td width="20%">US${{productClass.price.toLocaleString('en-US')}}</td>
+                            <td>
+                                <button class="move" onclick=click() style="width: 35%" v-if="productClass.earlyBird" >Book Earlybird!</button>
+                                <button class="move" onclick=click() style="width: 35%" v-else>Book</button>&nbsp;
+                                <span v-show="productClass.seatsAvailable < 10" style="color:red">
+                                    Almost Sold out!
+                                </span>
+                            </td>
+
+                        </tr>
+                    </table>
+                </div>
+        </div>
+    </div>
+
+    <script src="../../assets/js/jquery.min.js"></script>
+    <script src="../../assets/js/browser.min.js"></script>
+    <script src="../../assets/js/breakpoints.min.js"></script>
+    <script src="../../assets/js/util.js"></script>
+    <script src="../../assets/js/main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

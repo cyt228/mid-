@@ -1,0 +1,88 @@
+body {
+    font-weight: bold;
+    margin: 2rem;
+}
+
+h3 {
+    font-weight: 100;
+    color: #555;
+    margin: 0.4rem 0;
+}
+
+svg {
+    border: 1px solid #ccc;
+}
+
+.general-update-container {
+    margin: 0 auto;
+}
+
+button {
+    outline: none;
+    color: #555;
+    border-color: #eee;
+    background: #fefefe;
+    padding: 3px 0px;
+    width: 60px;
+    text-align: center;
+    transition: all 200ms;
+}
+
+.season:hover {
+    background: lightgoldenrodyellow;
+}
+
+.season:focus {
+    background: #D5DBDB;
+}
+
+.controls {
+    width: max-content;
+    margin: 0 auto;
+}
+
+.season {
+    outline: none;
+    color: #555;
+    border-color: #eee;
+    background: #fefefe;
+    padding: 3px 0px;
+    width: 60px;
+    text-align: center;
+    transition: all 200ms;
+}
+
+.move {
+    /* float: left;
+    width: 80px;
+    writing-mode: horizontal-tb; */
+    width: max-content;
+    margin: 0 auto;
+}
+
+#one,
+#two,
+#three,
+#four {
+   display:none;
+} /**/
+
+#one{
+    position:absolute;
+    left:295px;
+}
+
+#two{
+    position:absolute;
+    left:360px;
+}
+
+#three{
+    position:absolute;
+    left:425px;
+}
+
+#four{
+    position:absolute;
+    left:490px;
+}

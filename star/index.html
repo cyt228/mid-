@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="../assets/css/noscript.css" />
+    </noscript>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper-->
+    <div id="wrapper">
+
+        <!-- Nav -->
+        <nav id="nav">
+            <a href="../index.html" class="icon solid fa-home"><span>Home</span></a>
+            <a href="../#work" class="icon solid fa-folder"><span>Work</span></a>
+            <a href="../#contact" class="icon solid fa-envelope"><span>Contact</span></a>
+            <a href="https://www.instagram.com/c.y.t_28/" class="icon brands fa-instagram"
+                target="_blank"><span>Instargram</span></a>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Work -->
+            <article id="work" class="panel">
+
+                <h3 class="Header" style="text-align: center;">觀星</h3>
+
+
+                <div class="move">
+                    <button class="season" id='one' onclick=change()></button>
+                    <button class="season" id="two" onclick=change()></button>
+                    <button class="season" id="three" onclick=change()></button>
+                    <button class="season" id="four" onclick=change()></button>
+
+                </div>
+
+                <div class="general-update-container" style="margin: 0 auto; width: max-content;">
+                    <br>
+                    <svg width="250px" height="200px"></svg>
+                </div>
+
+
+
+                <div class="controls">
+                    <button class="season" onclick=showtext1() data-name="spring">Spring</button>
+                    <button class="season" onclick=showtext2() data-name="summer">Summer</button>
+                    <button class="season" onclick=showtext3() data-name="autumn">Autumn</button>
+                    <button class="season" onclick=showtext4() data-name="winter">Winter</button>
+                </div>
+                
+                <div class="controls">
+                    <button id='back' onclick=back()>Back</button>
+                </div>
+            </article>
+
+        </div>
+    </div>
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="//unpkg.com/d3"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

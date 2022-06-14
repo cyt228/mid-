@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../../../assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="../../../assets/css/noscript.css" />
+    </noscript>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper-->
+    <div id="wrapper">
+
+        <!-- Nav -->
+        <nav id="nav">
+            <a href="../../../index.html" class="icon solid fa-home"><span>Home</span></a>
+            <a href="../../../#work" class="icon solid fa-folder"><span>Work</span></a>
+            <a href="../../../#contact" class="icon solid fa-envelope"><span>Contact</span></a>
+            <a href="https://www.instagram.com/c.y.t_28/" class="icon brands fa-instagram"
+                target="_blank"><span>Instargram</span></a>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Work -->
+            <article id="work" class="panel">
+                <h1></h1>
+                <!-- <div id="app" style="width:max-content; margin:0 auto;"> -->
+                <div id="app">
+                    姓名 : <input type="text" v-model="name"><br>
+                    電話 : <input type="text" v-model="number"><br><br>
+
+                    <h4>性別: </h4>
+                    <input type="radio" v-model="graduationIndex" value="0"><label for="bachelor">男生</label>
+                    <input type="radio" v-model="graduationIndex" value="1"><label for="master">女生</label>
+                    <input type="radio" v-model="graduationIndex" value="2"><label for="phd">不透露</label>
+
+                    <br><br>
+                    <h4>用品統計: </h4>
+                    <input type="checkbox" v-model="club_experience"> 露營用品 : {{club_experience}}<br>
+                    <input type="checkbox" v-model="work_experience" true-value="有" false-value="無"
+                        @change="reset_work_experience">
+                    露營經驗 : {{work_experience}}
+                    <select v-model="selectedIndex" v-show="work_experience=='有'">
+                        <option v-for="(stringItem, index) in statusList" :value="index">
+                            {{stringItem}}
+                        </option>
+                    </select>
+
+                    <br><br>
+                    <button @click="displaySummary">摘要</button> {{summary}}
+
+                    <br><br>
+                    <button @click="calculate">價錢計算</button>
+                    <span v-show="showResult">NT$
+                        {{result_realtime.toLocaleString('zh-TW')}}</span>
+
+                    <br><br>
+                    <button type="button" id="restart">清空</button>
+                    <br><br>
+                    <button id='back'onclick=back()>Back</button>
+                </div>
+            </article>
+
+        </div>
+    </div>
+
+    <script src="../../../assets/js/jquery.min.js"></script>
+    <script src="../../../assets/js/browser.min.js"></script>
+    <script src="../../../assets/js/breakpoints.min.js"></script>
+    <script src="../../../assets/js/util.js"></script>
+    <script src="../../../assets/js/main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="//unpkg.com/vue@next"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

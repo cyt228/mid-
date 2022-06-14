@@ -3,12 +3,12 @@ var board = document.getElementById("gomoku");
 var turn,       //白棋下过turn为0，黑棋为1
     isOver;     //isOver为true时游戏结束
 var record = [];    //棋谱记录
-var boardWidth = 485,   //棋盘宽度
-    boardHeight = 485,  //棋盘高度
+var boardWidth = 750,   //棋盘宽度
+    boardHeight = 750,  //棋盘高度
     marginInit = 25,    //与边界的空隙
     gridLength = 50,    //每一格宽度
-    row = 10,           //行数
-    column = 10,        //列数
+    row = 15,           //行数
+    column = 15,        //列数
     radius = 20;        //棋子半径
 var chess = {
     //绘制棋盘
